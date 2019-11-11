@@ -10,6 +10,7 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
   let newArray = arr.filter(number => number % 2 !== 0);
+
   return newArray;
 };
 
@@ -26,8 +27,11 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 const filterStringsWithVowels = (arr) => {
   let regex = /[aeiou]/;
+
   let newArray = arr.filter(wordsWithVowels => regex.test(wordsWithVowels));
+
   return newArray;
+
 };
 
 
@@ -40,8 +44,10 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  let newArray = arr.filter(ele => forbiddenValues.indexOf(ele) === -1)
+  let newArray = arr.filter(ele => forbiddenValues.indexOf(ele) === -1);
+
   return newArray;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +90,10 @@ const snorlaxData = {
 };
 
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
-  // Solution code here...
+  let newArr = arr.filter(prop => prop.baseStat > minBaseStat);
+
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,7 +105,17 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 ------------------------------------------------------------------------------------------------ */
 
 const getStatName = (arr, minBaseStat) => {
-  // Solution code here...
+  let results = [];
+
+  let newArr = arr.filter(prop => prop.baseStat > minBaseStat);
+
+  newArr.forEach(obj => {
+    results.push(obj.stat.name);
+
+  });
+
+  return results;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -149,7 +168,10 @@ const characters = [
 ];
 
 const getCharactersWithoutChildren = (arr) => {
-  // Solution code here...
+  let newArr = arr.filter(char => char.children === undefined);
+
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
