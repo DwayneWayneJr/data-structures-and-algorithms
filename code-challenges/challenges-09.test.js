@@ -9,7 +9,17 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  let newArr = arr.reduce(answerSoFar => {
+    console.log(answerSoFar);
+
+    answerSoFar++;
+
+    return answerSoFar;
+
+  }, 0);
+
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -70,7 +80,15 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  let newArr = arr.reduce((answerSoFar, value) => {
+    answerSoFar.push(value.name);
+
+    return answerSoFar;
+
+  }, []);
+
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +100,17 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  let newArr = str.split('').reduce((answerSoFar, value) => {
+    answerSoFar.unshift(value);
+
+    return answerSoFar;
+
+  }, []);
+
+  let newStr = newArr.join('');
+
+  return newStr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -135,9 +163,20 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
-};
+  let sum = arr.reduce((answerSoFar, value) => {
 
+    if (value.children !== undefined) {
+      answerSoFar = answerSoFar + value.children.length;
+
+    }
+
+    return answerSoFar;
+
+  }, 0);
+
+  return sum;
+
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -147,7 +186,17 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  // Solution code here...
+  let sum = arr.reduce((answerSoFar, value) => {
+    answerSoFar = answerSoFar + value;
+
+    return answerSoFar;
+
+  }, 0);
+
+  let newSum = sum / arr.length;
+
+  return newSum;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -168,8 +217,19 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
-  // Solution code here...
+  let result = 0;
+
+  let count = arr.reduce((answerSoFar, value) => {
+    if (isPrime(value) !== false) {
+      result++;
+    }
+
+  });
+
+  return result;
+
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
