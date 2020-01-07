@@ -8,6 +8,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 We talked as a group the best way approach the problem. Then we took turns on the whiteboard writing out a different part of the whiteboarding steps.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![Image of ArrayReverse whiteboard]
+()
 
 DJ collaborated with Ashlyn Morin and Yihang Zhang
