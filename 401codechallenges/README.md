@@ -1,11 +1,14 @@
 # Reverse an Array
-<!-- Short summary or background information -->
+To reverse the array, we iterate over the array and swap the elements until we reach the midpoint.
 
 ## Challenge
-<!-- Description of the challenge -->
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+We talked as a group the best way approach the problem. Then we took turns on the whiteboard writing out a different part of the whiteboarding steps.
 
 ## Solution
-<!-- Embedded whiteboard image -->
+![Image of ArrayReverse whiteboard]
+()
+
+DJ collaborated with Ashlyn Morin and Yihang Zhang
