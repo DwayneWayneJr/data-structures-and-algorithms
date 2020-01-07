@@ -12,8 +12,12 @@ public class ArrayReverse {
 
   // the method you should write, to reverse an array
   public static int[] reverseArray(int[] inputArray) {
-    // your code goes here!
-    // for now, to make sure that it compiles, here is a bad answer
-    return new int[0];
+  public static int[] reverseArray(int[] arr) {
+    int placeHolder;
+    for(int i = 0; i<arr.length/2; i++){
+      placeHolder = arr[i];
+      arr[i] = arr[arr.length-i-1];
+      arr[arr.length-i-1] = placeHolder;
+    } return arr;
   }
 }
