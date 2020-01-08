@@ -9,6 +9,7 @@ We talked as a group the best way approach the problem. Then we took turns on th
 
 ## Solution
 ![Image of ArrayReverse whiteboard]
-()
+(./Assets/array-reverse
+.jpg)
 
 DJ collaborated with Ashlyn Morin and Yihang Zhang
