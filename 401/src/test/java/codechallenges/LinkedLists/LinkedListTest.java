@@ -1,20 +1,22 @@
 package codechallenges.LinkedLists;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class LinkedListTest {
-    LinkedList checkIt = new LinkedList();
 
-    @Before
-    public void setUp() throws Exception {
-        checkIt.includes(1);
+    @Before public void makeList() {
+        LinkedList checkIt = new LinkedList();
+        checkIt.insert(3);
+
+        Assert.assertEquals(3, checkIt.head);
     }
 
-    @Test
-    public void insert() {
+    @Test public void testInsertValue() {
+        LinkedList checkIt = new LinkedList();
+
+        Assert.assertEquals(null, checkIt.head);
     }
 
     @Test
