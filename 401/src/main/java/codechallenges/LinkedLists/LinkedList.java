@@ -6,18 +6,17 @@ public class LinkedList {
 
     // Node class
     public static class Node {
-        int data;
+        String data;
         Node next;
 
 //   Constructor to create a new node
-        Node(int d){
-            data = d;
+        Node(String data){
             next = null;
         }
     }
 
 //   Inserts a new Node at front of the list.
-    public void insertNew(int new_data) {
+    public void insertNew(String new_data) {
         Node new_node = new Node(new_data);
         if (this.head == null) {
             this.head = new_node;
@@ -26,14 +25,16 @@ public class LinkedList {
         }
     }
 
-    public boolean includesValue(int data) {
-        Node current_Node = this.head;
-        while  (current_ != null) {
-            if (head.data == value) {
-                return;
+    public boolean includesValue(String data) {
+        Node current_node = this.head;
+        while  (current_node != null) {
+
+            if (current_node.data == data) {
+                return true;
             }
-            head = head.next;
+            current_node = current_node.next;
         }
+        return false;
     }
 
     public String toString() {
