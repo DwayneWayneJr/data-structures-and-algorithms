@@ -1,6 +1,7 @@
 package codechallenges.LinkedLists;
 
 public class LinkedList {
+  linked-list
     // head of list
     Node head;
 
@@ -47,5 +48,5 @@ public class LinkedList {
         }
         return linkedListOut.toString();
     }
+master
 }
-
