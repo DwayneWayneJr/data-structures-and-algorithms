@@ -1,39 +1,30 @@
 package codechallenges.LinkedLists;
 
 public class LinkedList {
-  linked-list
     // head of list
     Node head;
 
-    // Node class
-    public static class Node {
-        String data;
-        Node next;
-
-//   Constructor to create a new node
-        Node(String data){
-            next = null;
-        }
-    }
 
 //   Inserts a new Node at front of the list.
-    public void insertNew(String new_data) {
-        Node new_node = new Node(new_data);
+    public void linkedListIn (String letter) {
+        Node newNode = new Node(letter);
+
         if (this.head == null) {
-            this.head = new_node;
+            this.head = newNode;
         } else {
-            head.next = new_node;
+            newNode.next = this.head;
         }
     }
 
-    public boolean includesValue(String data) {
-        Node current_node = this.head;
-        while  (current_node != null) {
+    public boolean linkedListIncludes(String data) {
+        Node currentNodePosition = this.head;
 
-            if (current_node.data == data) {
+        while  (currentNodePosition.next != null) {
+
+            if (currentNodePosition.data == data) {
                 return true;
             }
-            current_node = current_node.next;
+            currentNodePosition = currentNodePosition.next;
         }
         return false;
     }
@@ -48,5 +39,5 @@ public class LinkedList {
         }
         return linkedListOut.toString();
     }
-master
+
 }
