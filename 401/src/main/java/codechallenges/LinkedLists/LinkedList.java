@@ -40,5 +40,9 @@ public class LinkedList {
         return linkedListOut.toString();
     }
 
-    
+
+    public static LinkedList mergeLists(LinkedList one, LinkedList two) {
+        return;
+    }
+
 }
