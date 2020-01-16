@@ -5,7 +5,7 @@ public class LinkedList {
     Node head;
 
 
-//   Inserts a new Node at front of the list.
+    //   Inserts a new Node at front of the list.
     public void linkedListIn (String letter) {
         Node newNode = new Node(letter);
 
@@ -40,4 +40,5 @@ public class LinkedList {
         return linkedListOut.toString();
     }
 
+    
 }
