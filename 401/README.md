@@ -13,3 +13,7 @@ We talked as a group the best way approach the problem. Then we took turns on th
 .jpg)
 
 DJ collaborated with Ashlyn Morin and Yihang Zhang
+
+Next CC here
+
+test
