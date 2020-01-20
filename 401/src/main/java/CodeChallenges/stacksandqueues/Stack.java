@@ -8,6 +8,6 @@ public class Stack {
     }
 
     public void pushItToStack(String NodeValue) {
-        Node nodeValue = new Node
+        Node nodeValue = new Node;
     }
 }

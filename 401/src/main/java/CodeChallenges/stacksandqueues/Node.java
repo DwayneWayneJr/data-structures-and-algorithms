@@ -1,12 +1,10 @@
 package codechallenges.stacksandqueues;
 
-public class Node {
-    Node head;
+public class Node<E> {
+    E value;
+    Node<E> next;
 
-    int data;
-    Node next;
-
-    Node(int d) {
+    Public Node(E value) {
         data = d;
         next = null;
     }
