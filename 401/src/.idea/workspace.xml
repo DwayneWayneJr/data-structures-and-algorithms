@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="5dfe5c23-4555-410a-a87e-29de32204116" name="Default Changelist" comment="" />
+=======
     <list default="true" id="81b4159a-3966-4b83-bb8b-54fb7b7bb50f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
     </list>
@@ -12,6 +14,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="ProjectId" id="1WeSgDV7dmdje3Dh8SYFDTjqhTm" />
+=======
   <component name="ProjectId" id="1WRX9ct4XijezBLRZ6rAKnUpbjr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,6 +25,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../challenges" />
   </component>
   <component name="ServiceViewManager">
@@ -40,6 +46,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="5dfe5c23-4555-410a-a87e-29de32204116" name="Default Changelist" comment="" />
+      <created>1579508676550</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579508676550</updated>
+=======
       <changelist id="81b4159a-3966-4b83-bb8b-54fb7b7bb50f" name="Default Changelist" comment="" />
       <created>1579113230769</created>
       <option name="number" value="Default" />
@@ -49,6 +61,11 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1579508702371">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1579508702371" />
+=======
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1579113320989">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
