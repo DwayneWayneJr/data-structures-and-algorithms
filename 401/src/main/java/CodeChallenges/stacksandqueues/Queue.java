@@ -7,7 +7,13 @@ public class Queue<T> {
     Private Node<T> rear;
 
     public void enqueue(T value) {
-
+        Node newNode = new Node(value);
+        if (front == null) {
+            front = newNode;
+        } else {
+            rear.next = newNode;
+        }
+        rear = newNode
     }
     
 }
