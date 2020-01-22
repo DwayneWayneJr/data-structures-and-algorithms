@@ -1,10 +1,23 @@
 package codechallenges.stacksandqueuesTest;
 
 import codechallenges.stacksandqueues.Queue;
+import org.junit.Before;
 import org.junit.Test;
-import org.w3c.dom.ls.LSOutput;
+import java.util.NoSuchElementException;
+import static org.junit.Assert.*;
 
 public class QueueTest {
+
+    Queue emptyQueue;
+    Queue queue;
+
+    Queue<Integer> numbersQueue;
+    Queue<String> stringQueue;
+
+    @Before
+    public void setUp() {
+        queue = new Queue();
+    }
 
     @Test
     public void testInstantiation() {
@@ -12,41 +25,50 @@ public class QueueTest {
         System.out.println("newQueue = " + newQueue);
     }
 
-    Queue queue = new Queue();
-
     @Test
     public void testEnqueueEmpty() {
-        queue.enqueue(314);
+        queue.enqueue(100);
+        assertEquals(100, queue.peek());
     }
 
     @Test
     public void testEnqueueLoaded() {
-        queue.enqueue(200);
-        queue.enqueue(201);
+        queue.enqueue(75);
+        assertEquals(75, queue.peek());
+        queue.enqueue(80);
+        assertEquals(75, queue.peek());
+        assertEquals(75, queue.dequeue());
+        assertEquals(80, queue.peek());
     }
 
-    @Test (expected = Exception.class)
+    @Test (expected = NoSuchElementException.class)
     public void testDequeueEmpty() {
         int value = queue.dequeue();
-        System.out.println("value = " + value);
-        queue.enqueue(20);
-        queue.enqueue(25);
-        value = queue.dequeue();
-        System.out.println("value = " + value);
     }
 
-    @Test (expected = Exception.class)
+    @Test public void testDequeueOnLoaded() {
+        queue.enqueue(29);
+        int value = queue.dequeue();
+        assertEquals(19, value);
+        queue.enqueue(30);
+        queue.enqueue(35);
+        value = queue.dequeue();
+        assertEquals(30, value);
+    }
+
+    @Test (expected = NoSuchElementException.class)
     public void testPeekEmpty() {
         int value = queue.peek();
-        System.out.println("value = " + value);
     }
 
     @Test
     public void testPeekLoaded() {
-        queue.enqueue(5);
-        queue.enqueue(10);
+        queue.enqueue(4);
+        queue.enqueue(9);
         int value = queue.peek();
-        System.out.println("value = " + value);
+        assertEquals(4, value);
+        value = queue.peek();
+        assertEquals(4, value);
     }
 
     @Test
@@ -58,5 +80,7 @@ public class QueueTest {
     public void testEmptyOnLoaded() {
         queue.enqueue(4);
         assertFalse(queue.isEmpty());
+        queue.dequeue();
+        assertTrue(queue.isEmpty());
     }
 }
