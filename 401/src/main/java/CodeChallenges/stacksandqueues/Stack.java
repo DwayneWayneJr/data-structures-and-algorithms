@@ -8,8 +8,7 @@ public class Stack<E> {
     }
 
     public void push(E eValue) {
-        Node<E> newNode = new Node<E>(); // Create new node to hold value
-        newNode.value = eValue; // set value in new node
+        Node<E> newNode = new Node<E>(eValue); // Create new node to hold value
         if (this.top == null) { // if no current nodes on stack
             this.top = newNode; // make this new node the first one
         } else {                // if there are nodes on the stack
