@@ -3,11 +3,11 @@ package codechallenges.stacksandqueues;
 import java.util.NoSuchElementException;
 
 public class Queue<T> {
-    private Node front;
-    private Node rear;
+    private Node<T> front;
+    private Node<T> rear;
 
-    public void enqueue(int value) {
-        Node newNode = new Node(value);
+    public void enqueue(T value) {
+        Node<T> newNode = new Node<T>(value);
         if (front == null) {
             front = newNode;
         } else {
@@ -16,17 +16,17 @@ public class Queue<T> {
         rear = newNode;
     }
 
-    public int dequeue() {
+    public T dequeue() {
         if (front == null) {
-            throw new NoSuchElementException("Cannot dequeue from empty queue.");
+            throw new NoSuchElementException("Cannot dequeue from empty queue."); //the same as checking isEmpty
         }
 
-        Node temp = front;
-        front = front.next;
-        return (int) temp.value;
+        Node<T> temp = front; //Take the front value and save it
+        front = front.next;// move the fronts value to the next in queue
+        return (T) temp.value; //return the value that was at front
     }
 
-    public int peek() {
+    public T peek() {
         if (front == null) {
             throw new NoSuchElementException("Cannot peek at an empty queue.");
         }
